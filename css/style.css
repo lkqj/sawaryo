@@ -1,0 +1,105 @@
+
+.container{
+    width: 960px;
+    height: 550px;
+    background-color: rgb(131, 135, 182);
+    margin: 0 auto;
+    position: relative;
+}
+
+.container img{
+    border: 10px solid #f1f1f1;
+    position: absolute;
+
+}
+
+.img1{
+    transform: rotate(-15deg);
+    width: 160px;
+    left: 25px;
+    top: 20px;
+}
+
+.img2{
+    transform: rotate(10deg);
+    width: 160px;
+    left: 190px;
+    top: 30px;
+}
+
+.img3{
+    transform: rotate(20deg);
+    width: 160px;
+    left: 710px;
+    top: 40px;
+}
+
+.img4{
+    transform: rotate(-15deg);
+    width: 160px;
+    left: 370px;
+}
+
+.img5{
+    transform: rotate(-5deg);
+    width: 160px;
+    left: 550px;
+}
+
+.img6{
+    transform: rotate(20deg);
+    width: 160px;
+    left: 20px;
+    top: 300px;
+}
+
+.img7{
+    transform: rotate(-15deg);
+    width: 130px;
+    left: 195px;
+    top: 250px;
+}
+
+.img8{
+    transform: rotate(5deg);
+    width: 110px;
+    left: 380px;
+    top: 270px;
+}
+
+.img9{
+    transform: rotate(-20deg);
+    width: 190px;
+    left: 525px;
+    top: 250px;
+}
+
+.img10{
+    transform: rotate(15deg);
+    width: 110px;
+    left: 740px;
+    top: 260px;
+}
+
+/* 其他样式内容 */
+
+/* 灯箱浮动层 */
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* 背景遮罩颜色，这里使用半透明黑色 */
+    z-index: 9999; /* 设置层级，确保灯箱在最上层 */
+    }
+    
+#lightboxImg {
+    max-width: 90%; /* 设置图片最大宽度，可根据需要调整 */
+    max-height: 90%; /* 设置图片最大高度，可根据需要调整 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 居中显示图片 */
+    }
