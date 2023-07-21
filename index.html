@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>灯箱效果</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <img class="img1" src="images/12.jpg.jpg" alt="美女" onclick="showLightbox(this)">
+        <img class="img2" src="images/13.jpg.jpg" alt="美女" onclick="showLightbox(this)">
+        <img class="img3" src="images/3.jpg.jpg" alt="美女" onclick="showLightbox(this)"> 
+        <img class="img4" src="images/4.jpg.jpg" alt="美女" onclick="showLightbox(this)">
+        <img class="img5" src="images/14.jpg.jpg" alt="美女" onclick="showLightbox(this)">
+        <img class="img6" src="images/6.jpg.jpg" alt="美女" onclick="showLightbox(this)">
+        <img class="img7" src="images/15.jpg.jpg" alt="美女" onclick="showLightbox(this)">
+        <img class="img8" src="images/16.jpg.jpg" alt="美女" onclick="showLightbox(this)">
+        <img class="img9" src="images/17.jpg.jpg" alt="美女" onclick="showLightbox(this)">
+        <img class="img10" src="images/18.jpg.jpg" alt="美女" onclick="showLightbox(this)">
+    </div>
+
+    <!-- 灯箱浮动层 -->
+    <div id="lightbox" onclick="hideLightbox()">
+        <img id="lightboxImg" src="" alt="放大的图片">
+    </div>
+
+    <script>
+        function showLightbox(element) {
+            var lightbox = document.getElementById("lightbox");
+            var lightboxImg = document.getElementById("lightboxImg");
+            lightboxImg.src = element.src; // 设置灯箱中图片的来源为点击的图片的来源
+            lightbox.style.display = "block"; // 显示灯箱浮动层
+        }
+        
+        function hideLightbox() {
+            var lightbox = document.getElementById("lightbox");
+            lightbox.style.display = "none"; // 隐藏灯箱浮动层
+        }
+    </script>
+
+</body>
+</html>
